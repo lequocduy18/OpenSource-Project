@@ -74,24 +74,37 @@
                 <div class="member-list">
                     <div class="member-item">
                         <img src="./img/person.png" alt="" class="member-img">
-                        <p class="member-name"><a href="https://github.com/boyga123d">Tran Ngoc Long</a></p>
+                        <button id="openCvBtn1" class="member-name">Name</button>
                     </div>
                     <div class="member-item">
                         <img src="./img/person.png" alt="" class="member-img">
-                        <p class="member-name">Name</p>
+                        <button id="openCvBtn2" class="member-name">Name</button>
                     </div>
                     <div class="member-item">
                         <img src="./img/person.png" alt="" class="member-img">
-                        <p class="member-name">Name</p>
+                        <button id="openCvBtn3" class="member-name">Name</button>
                     </div>
                 </div>
             </div>
-        </div>
-
-       
+        </div>    
     </section>
 
-
+    <section class="modal">
+        <div class="modal-container">
+            <header class="modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </header>
+            <div class="modal-header">
+                <h2>Header</h2>
+            </div>
+            <div class="modal-body">
+                <h2>body</h2>
+            </div>
+            <footer class="modal-footer">
+                footer
+            </footer>
+        </div>
+    </section>
 
     <script>
         ScrollReveal({
@@ -109,6 +122,27 @@
 
         ScrollReveal().reveal('.bypass-info li', { delay: 500, origin: 'left', interval: 80 });
         ScrollReveal().reveal('.member-item', { delay: 500, origin: 'bottom', interval: 200 });
+
+        // Modal
+        const modalBtn = document.getElementById("openCvBtn1")
+        const modalBtn2 = document.getElementById("openCvBtn2")
+        const modalBtn3 = document.getElementById("openCvBtn3")
+        const closeBtn = document.querySelector(".modal-close")
+        const modal = document.querySelector(".modal")
+        
+        function showModal() {
+            modal.classList.add("open")
+        }
+
+        function closeModal() {
+            modal.classList.remove("open")
+        }
+
+        modalBtn.addEventListener('click', showModal)
+        modalBtn2.addEventListener('click', showModal)
+        modalBtn3.addEventListener('click', showModal)
+        closeBtn.addEventListener('click', closeModal)
+
 
     </script>
 </body>

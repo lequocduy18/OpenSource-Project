@@ -130,9 +130,9 @@ section {
     padding-left: 50px;
 }
 
-.sec-03 {
+/* .sec-03 {
     margin-bottom: 50px;
-}
+} */
 
 .member-list {
     position: relative;
@@ -145,6 +145,7 @@ section {
 .member-item {
     margin-right: 5%;
     margin-left: 5%;
+    text-align: center;
 }
 
 .member-img{
@@ -158,13 +159,58 @@ section {
 }
 
 .sec-04 {
+    margin-top: 50px;
     margin-bottom: 60px;
 }
 
+/* ======== modal ======== */
 .modal {
-    position: fixed;
+    position: hidden;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container {
+    background: rgba(0, 0, 0, 0.6);
+    width: 1200px;
+    min-height: 500px;
+    position: relative;
+}
+
+#openCvBtn1, #openCvBtn2, #openCvBtn3 {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    padding: 10px;
+    font-size: 1em;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.modal-close:hover {
+    opacity: 1;
+}
+
+.modal-body {
+}
+
+.open {
+    display: flex;
+    position: fixed;
 }
