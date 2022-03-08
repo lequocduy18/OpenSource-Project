@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111222;
+}
+
+section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title {
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.content {
+    position: relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .image {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.content .image img {
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    transform: translate(-80px, 50px);
+}
+
+.content .text-box h3 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.media-icons {
+    margin-top: 100px;
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 60px;
+}
+
+.second-title {
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.info-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.info {
+    width: 700px;
+    margin-left: 50px;
+}
+
+.bypass-info {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.bypass-info li {
+    list-style: none;
+    font-size: 1.4em;
+}
+
+.bypass-info li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.bypass-info li:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.bypass-info li:nth-child(3){
+    padding-left: 100px;
+}
+
+.bypass-info li:nth-child(2), .bypass-info li:nth-child(4){
+    padding-left: 50px;
+}
+
+.sec-03 {
+    margin-bottom: 50px;
+}
+
+.member-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.member-item {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.member-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.member-name {
+    text-align: center;
+}
+
+.sec-04 {
+    margin-bottom: 60px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
